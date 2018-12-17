@@ -1,0 +1,3 @@
+WifiName:yourssid
+Password:yourpass
+PasswordType:2
