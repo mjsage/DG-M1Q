@@ -7,3 +7,6 @@ Unzip files to root of SD card.
 telnet the camera, username root, no password.
 
 sh /mnt/disc1/httpd.sh
+
+
+A windows batch file is provided to open this camera's .av files in VLC
