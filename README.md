@@ -15,7 +15,12 @@ A windows batch file is provided to open this camera's .av files in VLC
 Video settings for the app streams can apparently be found in /npc/congig/video_sc1135.xml and /npc/congig/image_sc1135.xml. I couldn't see any difference on the small low-res screen of my mobile phone. Be careful editing, the wrong values may crash the camera - I'd try to telnet in and killall npc if that happens, unfortunately these do not appear to have any effect on the bitrate of the very poor quality ONVIF / RTSP stream.
 
 
-```/npc/congig/video_sc1135.xml
+```
+
+/npc/congig/video_sc1135.xml
+
+
+~ ~ ~
 
 <Stream0>
                                 <id>0</id>
@@ -45,6 +50,9 @@ Video settings for the app streams can apparently be found in /npc/congig/video_
                                 <mjpeg_quality>50</mjpeg_quality>
                                 <mjpeg_chromaformat>1</mjpeg_chromaformat>
                         </Stream0>
+ 
+ ~ ~ ~
+ 
  ```
 
 
