@@ -1,18 +1,26 @@
 # DG-M1Q
-A quick hack to provide (insecure) access to the sd card using a http server.
+A quick hack to provide access to the sd card using a http server and set the time using ntpd.
 
-Remounts the sd card with execute permission, and runs a httpd server on port 80 with sdcard:/npc/ as home directory and creates a list of links to download the recordings and images, currently this doesn't filter out directory names and empty files.
+Remounts the sd card with execute permission, and runs a httpd server on port 80 with sdcard:/npc/ as home directory and creates a list of links to download the recordings and images.
+
+Username:admin Pass:cheese #edit httpd.conf to change
+
 
 Unzip DG-M1Q.zip to root of SD card.
-telnet the camera, username root, no password.
+telnet the camera, username root, no password. Then enter the following command
 
 sh /mnt/disc1/httpd.sh
 
 
-A windows batch file is provided to open this camera's .av files in VLC
+Can be made to run at boot if required by modifying the camera's /npc/boot.sh (see included boot.sh in zip).
+
+httpd.sh is set up to look for a time server on 192.168.1.1, edit httpd.sh to change IP.
 
 
-Video settings for the app streams can apparently be found in /npc/congig/video_sc1135.xml and /npc/congig/image_sc1135.xml. I couldn't see any difference on the small low-res screen of my mobile phone. Be careful editing, the wrong values may crash the camera - I'd try to telnet in and killall npc if that happens, unfortunately these do not appear to have any effect on the bitrate of the very poor quality ONVIF / RTSP stream.
+A windows batch file is provided to open this camera's .av files in VLC 
+
+
+Video settings for the app streams can apparently be found in /npc/congig/video_sc1135.xml and /npc/congig/image_sc1135.xml. I couldn't see any difference on the small low-res screen of my mobile phone. Be careful editing, the wrong values may crash the camera - I'd try to telnet in after rebooting and killall npc if that happens, unfortunately these do not appear to have any effect on the very low bitrate of the poor quality ONVIF / RTSP stream.
 
 
 ```
