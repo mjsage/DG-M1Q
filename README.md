@@ -3,7 +3,7 @@ A quick hack to provide access to the sd card using a http server and set the ti
 
 Remounts the sd card with execute permission, and runs a httpd server on port 80 with sdcard:/npc/ as home directory and creates a list of links to download the recordings and images.
 
-__Username:__ admin __Pass:__ cheese #edit httpd.conf to change
+__Username:__ admin __Pass:__ cheese __#edit httpd.conf to change__
 
 
 Unzip sdcard.zip to root of SD card.
@@ -44,7 +44,7 @@ Video settings for the app streams can apparently be found in /npc/congig/video_
                                 <h264_gop_N>50</h264_gop_N>
                                 <h264_idr_interval>1</h264_idr_interval>
                                 <h264_profile>0</h264_profile>
-                                <h264_bcr>1</h264_bcr>             <= Presumably 0,1 selects between constant and variable bit rate
+                                <h264_bcr>1</h264_bcr>             
                                 <h264_cbr_avg_bps>1000000</h264_cbr_avg_bps>
                                 <h264_vbr_min_bps>1000000</h264_vbr_min_bps>
                                 <h264_vbr_max_bps>2000000</h264_vbr_max_bps>
