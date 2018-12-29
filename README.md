@@ -6,7 +6,7 @@ Remounts the sd card with execute permission, and runs a httpd server on port 80
 __Username:__ admin __Pass:__ cheese __#edit httpd.conf to change__
 
 
-Unzip [sdcard.zip](../raw/master/sdcard.zip) to root of SD card.
+Unzip [sdcard.zip](https://github.com/mjsage/DG-M1Q/raw/master/sdcard.zip) to root of SD card.
 telnet the camera, username root, no password. Then enter the following command
 
 sh /mnt/disc1/httpd.sh
