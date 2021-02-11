@@ -64,7 +64,7 @@ Video settings for the app streams can apparently be found in /npc/congig/video_
  ```
 
 
-Instead of using the audio tones of the app, the Wifi password for this camera can be configured using a text file, wifiInfo.txt in the root of the sd card: https://www.mydigoo.com/Digoo-DG-M1Q-Can`t-Connect-Problem-Fixed-p-42.html . I think the camera should also boot with an open wifi AP before it is set up. 
+Instead of using the audio tones of the app, the Wifi password for this camera can be configured using a text file, wifiInfo.txt in the root of the sd card: https://web.archive.org/web/20180201150239/https://www.mydigoo.com/Digoo-DG-M1Q-Can%60t-Connect-Problem-Fixed-p-42.html . I think the camera should also boot with an open wifi AP before it is set up. 
 
 
 The m1q.vfat.img (busybox in a mountable image as an alternative to remounting the SD card) and sample.WifiInfo.txt aren't required and can be deleted.
